@@ -402,7 +402,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		const now = new Date();
 		document.getElementById('hours').placeholder = zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
 		document.getElementById('day').placeholder = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear()
-		document.getElementById('user').placeholder = "GustavoAlves"//os.userInfo().username
+		document.getElementById('user').placeholder = os.userInfo().username
 	}, 1);
 
 	const interval2 = setInterval(() => {
