@@ -1,0 +1,33 @@
+{
+  "name": "lock-box",
+  "version": "1.0.0",
+  "description": "lockBox",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "gustavoalves13711@gmail.com",
+  "license": "gustavoalves13711@gmail.com",
+  "devDependencies": {
+    "electron": "^12.2.3",
+    "electron-builder": "^22.10.5",
+    "electron-installer-windows": "^3.0.0",
+    "yarn": "^1.22.10"
+  },
+  "dependencies": {
+    "adbkit": "^2.11.1",
+    "asarmor": "^1.7.3",
+    "sweetalert": "^2.1.2"
+  },
+  "build": {
+    "arch": "x64",
+    "dir": ".",
+    "platform": "win32",
+    "app-bundle-id": "lock-box",
+    "asar": true,
+    "name": "LockBox",
+    "out": "dist/",
+    "overwrite": true,
+    "prune": true
+  }
+}
